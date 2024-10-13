@@ -2,15 +2,8 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pc_shop_version02/common%20widget/common_button.dart';
-import 'package:pc_shop_version02/common%20widget/common_loading_button.dart';
-import 'package:pc_shop_version02/common%20widget/common_text.dart';
-import 'package:pc_shop_version02/controller/api%20service/auth/sign_in_service.dart';
-import 'package:pc_shop_version02/controller/getX%20controller/sign_in.dart';
-import 'package:pc_shop_version02/view/screen/auth/sign_up.dart';
-import 'package:pc_shop_version02/view/screen/auth/widget/auth%20%20widget/email_text_field.dart';
-import 'package:pc_shop_version02/view/screen/auth/widget/confirm_password.dart';
-import 'package:pc_shop_version02/view/screen/forget_password/forget_password.dart';
+import 'package:homemade_haven/view/common_widget/common_loading_button.dart';
+import 'package:homemade_haven/view/screen/auth/sign_up.dart';
 class SignIn extends StatelessWidget {
   const SignIn({super.key});
 
