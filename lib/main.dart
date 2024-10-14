@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:homemade_haven/view/screen/auth/sign_in.dart';
+import 'package:homemade_haven/view/screen/splash/splash.dart';
 void main() {
   runApp(MyApp());
 }
@@ -9,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:SignIn() ,
+      home:Splash() ,
     );
   }
 }

@@ -3,8 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:homemade_haven/view/common_widget/common_button.dart';
-import 'package:pc_shop_version02/common%20widget/common_button.dart';
-import 'package:pc_shop_version02/view/screen/language%20selection/language_selection.dart';
+import 'package:homemade_haven/view/screen/language%20selection/language_selection.dart';
 
 class StartPage extends StatelessWidget {
   const StartPage({super.key});
@@ -24,7 +23,7 @@ class StartPage extends StatelessWidget {
               ),
               CommonButton(buttonColor:const Color(0xff9a0000)
                   ,buttonName: "GET STARTED", onTap:(){
-              Get.to(()=>const LanguageSelection())  ;
+              Get.to(()=> LanguageSelection())  ;
               })
             ],
           ),
