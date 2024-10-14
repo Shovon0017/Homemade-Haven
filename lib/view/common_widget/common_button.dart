@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pc_shop_version02/common%20widget/common_text.dart';
+import 'package:homemade_haven/view/common_widget/common_text.dart';
 class CommonButton extends StatelessWidget {
   const CommonButton(
       {super.key,

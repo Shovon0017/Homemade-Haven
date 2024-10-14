@@ -1,9 +1,6 @@
 // lib/cart_controller.dart
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:pc_shop_version02/Model/add_to_cart_model.dart';
-import 'package:pc_shop_version02/Model/productInfoModel.dart';
-import 'package:pc_shop_version02/Model/productListModel.dart';
 class AddToCartController extends GetxController {
   var cart = <Products>[].obs;
   final GetStorage storage = GetStorage();

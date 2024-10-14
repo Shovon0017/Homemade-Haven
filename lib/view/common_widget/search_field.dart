@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pc_shop_version02/common%20widget/common_button.dart';
+import 'package:homemade_haven/view/common_widget/common_button.dart';
 
 class SearchField extends StatelessWidget {
    SearchField({super.key,
@@ -23,13 +23,13 @@ var value=-1;
         focusedBorder: OutlineInputBorder(
             borderSide:  const BorderSide(color: Colors.black),
             borderRadius: BorderRadius.circular(8)),
-        labelText: "Search Computer Accessories",
+        labelText: "Search Recipe",
         suffixIcon: InkWell(
             onTap: (){
               Get.defaultDialog(
                   title: "Filter",
                   titleStyle: const TextStyle(
-                      color:Color(0xff9a0000), fontWeight: FontWeight.bold),
+                      color:Color(0xffa1447d), fontWeight: FontWeight.bold),
                   content: Column(
                     children: [
                       DropdownButtonFormField(
@@ -41,64 +41,26 @@ var value=-1;
                           items: const [
                             DropdownMenuItem(
                               value: -1,
-                              child: Text("Accessories"),
+                              child: Text("Choose Country"),
                             ),
                             DropdownMenuItem(
                                 value: 0,
-                                child: Text("Mouse")),
+                                child: Text("Bangladeshi")),
                             DropdownMenuItem(
                                 value: 1,
-                                child: Text("Keyboard")),
+                                child: Text("Indian")),
                             DropdownMenuItem(
                                 value: 2,
-                                child: Text("Headphone"))
-                          ],
-                          onChanged: (v) {}),
-                      const SizedBox(height: 10),
-                      DropdownButtonFormField(
-                          decoration: InputDecoration(
-                              border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(10),
-                                  borderSide:
-                                  const BorderSide(color: Colors.black))),
-                          value: value,
-                          items: const [
-                            DropdownMenuItem(
-                              value: -1,
-                              child: Text("HardWare"),
-                            ),
-                            DropdownMenuItem(
-                                value: 0,
-                                child: Text("Ram")),
-                            DropdownMenuItem(
-                                value: 1,
-                                child: Text("SSD")),
+                                child: Text("Chinese")),
                             DropdownMenuItem(
                                 value: 2,
-                                child: Text("Cooling System"))
-                          ],
-                          onChanged: (v) {}),
-                      const SizedBox(height: 10),
-                      DropdownButtonFormField(
-                          decoration: InputDecoration(
-                              border: OutlineInputBorder(borderRadius: BorderRadius.circular(10),
-                                  borderSide:
-                                  const BorderSide(color: Colors.black))),
-                          value: value,
-                          items: const [
-                            DropdownMenuItem(
-                              value: -1,
-                              child: Text("MotherBoard"),
-                            ),
-                            DropdownMenuItem(
-                                value: 0,
-                                child: Text("Msi")),
-                            DropdownMenuItem(
-                                value: 1,
-                                child: Text("Gygabyte")),
+                                child: Text("Thai")),
                             DropdownMenuItem(
                                 value: 2,
-                                child: Text("ColorFull"))
+                                child: Text("Korean")),
+                            DropdownMenuItem(
+                                value: 2,
+                                child: Text("Pakistani"))
                           ],
                           onChanged: (v) {}),
                       const SizedBox(height: 10),
@@ -107,7 +69,7 @@ var value=-1;
                     ],
                   ));
             },
-            child: const Card(color:Color(0xff9a0000),child: Icon(Icons.search,color: Colors.white,)))
+            child: const Card(color:Color(0xffa1447d),child: Icon(Icons.search,color: Colors.white,)))
       ),
     );
   }

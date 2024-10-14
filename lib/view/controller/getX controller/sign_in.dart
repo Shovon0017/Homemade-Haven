@@ -2,8 +2,8 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pc_shop_version02/controller/api%20service/auth/sign_in_service.dart';
-import 'package:pc_shop_version02/view/screen/navigation%20bar/navigation.dart';
+import 'package:homemade_haven/view/controller/api_controller/auth/sign_in_service.dart';
+import 'package:homemade_haven/view/screen/navigation%20bar/navigation.dart';
 
 
 class SignInController extends GetxController {

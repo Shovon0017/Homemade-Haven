@@ -1,7 +1,8 @@
+
 import 'package:animated_notch_bottom_bar/animated_notch_bottom_bar/animated_notch_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pc_shop_version02/controller/getX%20controller/navigator_controller.dart';
+import 'package:homemade_haven/view/controller/getX%20controller/navigator_controller.dart';
 class NavigationBarShow extends StatelessWidget {
   const NavigationBarShow({super.key});
   @override
@@ -19,7 +20,7 @@ class NavigationBarShow extends StatelessWidget {
       (controller.bottomBarPages.length <= controller.maxCount.value)
           ? AnimatedNotchBottomBar(
         notchBottomBarController: controller.nController,
-        color: const Color(0xff9a0000),
+        color: const Color(0xffa1447d),
         showLabel: true,
         textOverflow: TextOverflow.visible,
         maxLine: 1,
@@ -42,22 +43,22 @@ class NavigationBarShow extends StatelessWidget {
             ),
             activeItem: Icon(
               Icons.home_outlined,
-              color:Color(0xff9a0000),
+              color:Color(0xffa1447d),
 
             ),
             itemLabel: 'Home',
           ),
           BottomBarItem(
             inActiveItem: Icon(
-              Icons.shopping_cart,
+              Icons.favorite_outlined,
               color: Colors.white,
 
             ),
             activeItem: Icon(
-              Icons.shopping_cart,
-              color: Color(0xff9a0000),
+              Icons.favorite_outlined,
+              color: Color(0xffa1447d),
             ),
-            itemLabel: 'Cart',
+            itemLabel: 'Favorite',
           ),
           BottomBarItem(
             inActiveItem: Icon(
@@ -66,7 +67,7 @@ class NavigationBarShow extends StatelessWidget {
             ),
             activeItem: Icon(
               Icons.person,
-              color:Color(0xff9a0000),
+              color:Color(0xffa1447d),
             ),
             itemLabel: 'Profile',
           ),

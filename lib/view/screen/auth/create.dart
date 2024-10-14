@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pc_shop_version02/common%20widget/common_button.dart';
-import 'package:pc_shop_version02/view/screen/auth/SignIn.dart';
+import 'package:homemade_haven/view/common_widget/common_button.dart';
+import 'package:homemade_haven/view/screen/auth/sign_in.dart';
 
 class Create extends StatefulWidget {
   const Create({super.key});
@@ -67,11 +67,11 @@ class _CreateState extends State<Create> {
                           borderSide: const BorderSide(width: 1))),
                 ),
                  const ListTile(
-                  leading: Icon(Icons.check_box_outlined,color: Color(0xff9a0000),),
-                  title: Text("By proceeding, you agree to zdrop’s Teams and Conditions",style: TextStyle(fontSize: 13),),
+                  leading: Icon(Icons.check_box_outlined,color: Color(0xffa1447d),),
+                  title: Text("By proceeding, you agree to zdrop’s Terms and Conditions",style: TextStyle(fontSize: 13),),
                 ),
                  const ListTile(
-                  leading: Icon(Icons.check_box_outlined,color: Color(0xff9a0000),),
+                  leading: Icon(Icons.check_box_outlined,color: Color(0xffa1447d),),
                   title: Text("By proceeding, you agree to zdrop’s Privacy and Policy",style: TextStyle(fontSize: 13),),
                 ),
                 CommonButton(buttonName: "Sign Up", onTap: (){

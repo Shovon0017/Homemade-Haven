@@ -2,8 +2,15 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:homemade_haven/view/common_widget/common_button.dart';
 import 'package:homemade_haven/view/common_widget/common_loading_button.dart';
+import 'package:homemade_haven/view/common_widget/common_text.dart';
+import 'package:homemade_haven/view/controller/api_controller/auth/sign_in_service.dart';
+import 'package:homemade_haven/view/controller/getX%20controller/sign_in.dart';
 import 'package:homemade_haven/view/screen/auth/sign_up.dart';
+import 'package:homemade_haven/view/screen/auth/widget/auth%20%20widget/email_text_field.dart';
+import 'package:homemade_haven/view/screen/auth/widget/password.dart';
+import 'package:homemade_haven/view/screen/forget_password/forget_password.dart';
 class SignIn extends StatelessWidget {
   const SignIn({super.key});
 
