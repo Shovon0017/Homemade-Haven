@@ -14,7 +14,7 @@ class LanguageSelection extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal:10),
           child: Column(mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset("images/english select logo.png"),
+              Image.asset("images/languages.jpg"),
               const SizedBox(height: 90),
               DropdownButtonFormField(
                   decoration: InputDecoration(
