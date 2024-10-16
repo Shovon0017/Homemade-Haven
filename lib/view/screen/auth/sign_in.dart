@@ -56,7 +56,6 @@ class SignIn extends StatelessWidget {
                         if (!signInController.formKey.currentState!.validate()) {
                           return ;
                         }
-                        log("==========222222222222===============");
                         signInController.signInFun();
                       },
                     ) : const CommonLoadingButton()),
