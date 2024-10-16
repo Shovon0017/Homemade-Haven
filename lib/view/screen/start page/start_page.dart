@@ -17,7 +17,7 @@ class StartPage extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal:10),
           child: Column(mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset("images/Startpage.jpg"),
+              Image.asset("images/recipe startpage.jpg"),
               const SizedBox(
                 height: 200,
               ),
