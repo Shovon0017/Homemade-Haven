@@ -57,7 +57,6 @@ class SignUp extends StatelessWidget {
                               .validate()) {
                             return;
                           }
-                          log("==========222222222222===============");
                           signupController.SignUpFun();
                         })
                         : const CommonLoadingButton(),),
