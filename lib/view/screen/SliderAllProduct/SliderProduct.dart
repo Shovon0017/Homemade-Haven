@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 import 'package:homemade_haven/view/common_widget/CommonIcon.dart';
 import 'package:homemade_haven/view/common_widget/common_text.dart';
 import 'package:homemade_haven/view/common_widget/search_field.dart';
-import 'package:homemade_haven/view/controller/getX%20controller/ProductListController.dart';
+import 'package:homemade_haven/view/controller/getX%20controller/recipeListController.dart';
 import 'package:homemade_haven/view/screen/notification/notification.dart';
 
 class SliderProductScreen extends StatelessWidget {
