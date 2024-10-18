@@ -91,13 +91,13 @@ class SliderProductScreen extends StatelessWidget {
                                             "${controller.productList[index].image}"))),
                                 CommonText(
                                     title:
-                                    "ID : ${controller.productList[index].productId}"),
+                                    "ID : ${controller.productList[index].id}"),
                                 CommonText(
                                     title:
-                                    "Name : ${controller.productList[index].nameEn}"),
+                                    "Name : ${controller.productList[index].title}"),
                                 CommonText(
                                     title:
-                                    "Price : ${controller.productList[index].regPrice}Tk"),
+                                    "Country : ${controller.productList[index].country}Tk"),
                               ],
                             ),
                           ),
