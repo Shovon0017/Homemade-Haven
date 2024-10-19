@@ -14,8 +14,60 @@ class LanguageSelection extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal:10),
           child: Column(mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Row(
+              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
+                  SizedBox(
+                    height: 190,
+                    width: 190,
+                    child: Card(
+                      color: Colors.red
+                    ),
+                  ),
+                  SizedBox(
+                    height: 190,
+                    width: 190,
+                    child: Card(
+                        color: Colors.red
+                    ),
+                  )
+
+                ],
+              ),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  SizedBox(
+                    height: 190,
+                    width: 190,
+                    child: Card(
+                        color: Colors.red
+                    ),
+                  ),
+                  SizedBox(
+                    height: 190,
+                    width: 190,
+                    child: Card(
+                        color: Colors.red
+                    ),
+                  )
+
+                ],
+              ),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  SizedBox(
+                    height: 190,
+                    width: 190,
+                    child: Card(
+                        color: Colors.red
+                    ),
+                  ),
+                  SizedBox(
+                    height: 190,
+                    width: 190,
+                    child: Card(
+                        color: Colors.red
+                    ),
+                  )
 
                 ],
               )
