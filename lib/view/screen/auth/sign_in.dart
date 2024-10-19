@@ -29,7 +29,7 @@ class SignIn extends StatelessWidget {
                 key: signInController.formKey,
                 child: Column(
                   children: [
-                    const Text("Sign In",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 50,color: Color(0xff9a0000)),),
+                    const Text("Sign In",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 50,color: Color(0xffc873a9)),),
                     SizedBox(
                         height: 200,
                         width: 200,
@@ -46,7 +46,7 @@ class SignIn extends StatelessWidget {
                         InkWell(onTap: (){
                           Get.to(()=>const ForgetPassword());
                         },
-                            child: const CommonText(title: "Forget Password",fWeight: FontWeight.bold,fSize: 15,fColor:Color(0xff9a0000),)),
+                            child: const CommonText(title: "Forget Password",fWeight: FontWeight.bold,fSize: 15,fColor:Color(0xffc873a9),)),
                       ],
                     ),
                     buildSizedBox(height: 10),
@@ -65,7 +65,7 @@ class SignIn extends StatelessWidget {
                         const Text("Don't have an Account",style: TextStyle(fontWeight: FontWeight.bold),),
                         buildSizedBox(width: 10),
                         GestureDetector(
-                          child:const Text("Sign Up",style: TextStyle(fontWeight: FontWeight.bold,color: Color(0xff9a0000),fontSize: 17),),
+                          child:const Text("Sign Up",style: TextStyle(fontWeight: FontWeight.bold,color:Color(0xffc873a9),fontSize: 17),),
                           onTap: (){
                             Get.to(() => const SignUp());
                           },
