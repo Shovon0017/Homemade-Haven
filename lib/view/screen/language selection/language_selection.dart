@@ -33,13 +33,24 @@ class LanguageSelection extends StatelessWidget {
 
                 ],
               ),
+              SizedBox(
+                height: 10,
+              ),
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   SizedBox(
                     height: 190,
                     width: 190,
                     child: Card(
-                        color: Colors.red
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            children: [
+                              Image.asset("images/us.webp"),
+                              Text("English")
+                            ],
+                          ),
+                        ),
                     ),
                   ),
                   SizedBox(
@@ -51,6 +62,9 @@ class LanguageSelection extends StatelessWidget {
                   )
 
                 ],
+              ),
+              SizedBox(
+                height: 10,
               ),
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
