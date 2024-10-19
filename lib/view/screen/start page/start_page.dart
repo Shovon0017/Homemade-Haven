@@ -10,7 +10,7 @@ class StartPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold( backgroundColor:  const Color(0xffFFFFFF),
+    return Scaffold( backgroundColor:  const Color(0xff82410c),
       body: Center(
         child:
         Padding(
@@ -18,11 +18,12 @@ class StartPage extends StatelessWidget {
           child: Column(mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset("images/recipe startpage.jpg"),
-              const SizedBox(
-                height: 200,
+              SizedBox(
+                height: 50,
               ),
-              CommonButton(buttonColor:const Color(0xff9a0000)
-                  ,buttonName: "GET STARTED", onTap:(){
+              CommonButton(
+                buttonColor: Colors.white,
+                  buttonName: "GET STARTED",textColor: Colors.black, onTap:(){
               Get.to(()=> LanguageSelection())  ;
               })
             ],
