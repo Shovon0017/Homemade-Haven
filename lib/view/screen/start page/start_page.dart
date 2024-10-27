@@ -23,7 +23,7 @@ class StartPage extends StatelessWidget {
               ),
               CommonButton(
                 buttonColor: Colors.white,
-                  buttonName: "GET STARTED",textColor: Colors.black, onTap:(){
+                  buttonName: "GET START",textColor: Colors.black, onTap:(){
               Get.to(()=> LanguageSelection())  ;
               })
             ],
