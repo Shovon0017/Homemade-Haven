@@ -50,7 +50,7 @@ class SliderProductScreen extends StatelessWidget {
             const SizedBox(height: 10),
             Obx(() => controller.isLoading.isTrue
                 ? const Center(child: CircularProgressIndicator())
-                : controller.productList.isEmpty
+                : controller.recipeList.isEmpty
                 ? const Center(
                 child: CommonText(title: "Empty Product List"))
                 : Column(
@@ -62,7 +62,7 @@ class SliderProductScreen extends StatelessWidget {
                   child: GridView.builder(
                     physics: const PageScrollPhysics(),
                     shrinkWrap: true,
-                    itemCount: controller.productList.length,
+                    itemCount: controller.recipeList.length,
                     gridDelegate:
                     const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
@@ -88,16 +88,16 @@ class SliderProductScreen extends StatelessWidget {
                                     width: 100,
                                     child: Image(
                                         image: AssetImage(
-                                            "${controller.productList[index].image}"))),
+                                            "${controller.recipeList[index].image}"))),
                                 CommonText(
                                     title:
-                                    "ID : ${controller.productList[index].id}"),
+                                    "ID : ${controller.recipeList[index].id}"),
                                 CommonText(
                                     title:
-                                    "Name : ${controller.productList[index].title}"),
+                                    "Name : ${controller.recipeList[index].title}"),
                                 CommonText(
                                     title:
-                                    "Country : ${controller.productList[index].country}Tk"),
+                                    "Country : ${controller.recipeList[index].country}Tk"),
                               ],
                             ),
                           ),

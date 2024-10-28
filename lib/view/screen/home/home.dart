@@ -8,14 +8,6 @@ import 'package:homemade_haven/view/common_widget/search_field.dart';
 import 'package:homemade_haven/view/controller/getX%20controller/recipeListController.dart';
 import 'package:homemade_haven/view/screen/SliderAllProduct/SliderProduct.dart';
 import 'package:homemade_haven/view/screen/notification/notification.dart';
-import 'package:pc_shop_version02/common%20widget/CommonIcon.dart';
-import 'package:pc_shop_version02/common%20widget/common_text.dart';
-import 'package:pc_shop_version02/common%20widget/search_field.dart';
-import 'package:pc_shop_version02/controller/getX%20controller/ProductListController.dart';
-import 'package:pc_shop_version02/view/screen/SliderAllProduct/SliderProduct.dart';
-import 'package:pc_shop_version02/view/screen/notification/notification.dart';
-import 'package:pc_shop_version02/view/screen/product_info/product_info.dart';
-
 class Home extends StatelessWidget {
   const Home({super.key});
 
@@ -54,7 +46,7 @@ class Home extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10),
-            Text("CATEGORY",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Color(0xff9a0000))),
+            Text("CATEGORY",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Color(0xffa1447d))),
             CarouselSlider(
                 items: [
                   InkWell(
@@ -101,11 +93,11 @@ class Home extends StatelessWidget {
                     autoPlay: true,
                     autoPlayInterval: Duration(seconds: 3),
                     enlargeCenterPage: true)),
-            Text("ALL PRODUCT",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Color(0xff9a0000))),
+            Text("ALL PRODUCT",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Color(0xffa1447d))),
             const SizedBox(height: 10),
             Obx(() => controller.isLoading.isTrue
                 ? const Center(child: CircularProgressIndicator())
-                : controller.productList.isEmpty
+                : controller.recipeList.isEmpty
                     ? const Center(
                         child: CommonText(title: "Empty Product List"))
                     : Column(
@@ -117,7 +109,7 @@ class Home extends StatelessWidget {
                             child: GridView.builder(
                               physics: const PageScrollPhysics(),
                               shrinkWrap: true,
-                              itemCount: controller.productList.length,
+                              itemCount: controller.recipeList.length,
                               gridDelegate:
                                   const SliverGridDelegateWithFixedCrossAxisCount(
                                 crossAxisCount: 2,
@@ -125,10 +117,7 @@ class Home extends StatelessWidget {
                               itemBuilder: (context, index) {
                                 return InkWell(
                                   onTap: () {
-                                    Get.to(() => ProductInfo(
-                                        id: index,
-                                        productData:
-                                            controller.productList[index]));
+
                                   },
                                   child: Card(
                                     elevation: 4,
@@ -147,16 +136,16 @@ class Home extends StatelessWidget {
                                               width: 100,
                                               child: Image(
                                                   image: AssetImage(
-                                                      "${controller.productList[index].image}"))),
+                                                      "${controller.recipeList[index].image}"))),
                                           CommonText(
                                               title:
-                                                  "ID : ${controller.productList[index].productId}"),
+                                                  "ID : ${controller.recipeList[index].id}"),
                                           CommonText(
                                               title:
-                                                  "Name : ${controller.productList[index].nameEn}"),
+                                                  "Name : ${controller.recipeList[index].title}"),
                                           CommonText(
                                               title:
-                                                  "Price : ${controller.productList[index].regPrice}Tk"),
+                                                  "Country : ${controller.recipeList[index].country}"),
                                         ],
                                       ),
                                     ),

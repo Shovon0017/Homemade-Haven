@@ -6,29 +6,29 @@ import 'package:homemade_haven/view/model/recipeListModel.dart';
 
 
 class HomeController extends GetxController {
-  List<Recipes> finalProductList = [];
-  List<Recipes> productList = [];
-  RxList<Recipes> cardProductList = <Recipes>[].obs;
+  List<Recipes> finalRecipeList = [];
+  List<Recipes> recipeList = [];
+  RxList<Recipes> favoriteRecipeList = <Recipes>[].obs;
   RxBool isLoading = false.obs;
   getProduct() async {
-    finalProductList= await RecipeListService.recipeListService();
+    finalRecipeList= await RecipeListService.recipeListService();
     isLoading.value = true;
-    productList.addAll(finalProductList);
-    log("=============finalProductList 1: ${finalProductList.length}");
-    log("=============finalProductList 2: ${finalProductList.length}");
-    log("=============productList 1: ${productList.length}");
+    recipeList.addAll(finalRecipeList);
+    log("=============finalProductList 1: ${finalRecipeList.length}");
+    log("=============finalProductList 2: ${finalRecipeList.length}");
+    log("=============productList 1: ${recipeList.length}");
     isLoading.value = false;
   }
 
   searchFunction({required String searchText}) async {
     isLoading.value = true;
     log("-------------- $searchText");
-    productList = finalProductList
+    recipeList = finalRecipeList
         .where((value) =>
     value.title!.toLowerCase().contains(searchText.toLowerCase())  ||
         value.country.toString().contains(searchText))
         .toList();
-    log("=================Data : ${productList.length}");
+    log("=================Data : ${recipeList.length}");
     isLoading.value = false;
   }
 
