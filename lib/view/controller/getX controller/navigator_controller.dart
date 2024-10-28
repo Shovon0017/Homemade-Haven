@@ -1,6 +1,7 @@
 import 'package:animated_notch_bottom_bar/animated_notch_bottom_bar/animated_notch_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:homemade_haven/view/screen/Profile/profile.dart';
 import 'package:homemade_haven/view/screen/home/home.dart';
 class BottomNavBarController extends GetxController {
   final pageController = PageController(initialPage: 0);
@@ -13,7 +14,7 @@ class BottomNavBarController extends GetxController {
   List<Widget> bottomBarPages = [
     const Home(),
     // const Cart(),
-    // const Profile()
+    const Profile()
   ];
   @override
   void onInit() {
