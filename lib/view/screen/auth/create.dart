@@ -22,7 +22,7 @@ class _CreateState extends State<Create> {
         title: SizedBox(
             height: 40,
             width: 150,
-            child: Image.asset("images/pcmart.jpg")),
+            child: Image.asset("images/appbar_recipe_logo.png")),
         centerTitle: true,
       ),
       body:Center(

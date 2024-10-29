@@ -53,13 +53,13 @@ var value=-1;
                                 value: 2,
                                 child: Text("Chinese")),
                             DropdownMenuItem(
-                                value: 2,
+                                value: 3,
                                 child: Text("Thai")),
                             DropdownMenuItem(
-                                value: 2,
+                                value: 4,
                                 child: Text("Korean")),
                             DropdownMenuItem(
-                                value: 2,
+                                value: 5,
                                 child: Text("Pakistani"))
                           ],
                           onChanged: (v) {}),

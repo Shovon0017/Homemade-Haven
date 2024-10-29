@@ -20,7 +20,8 @@ class Home extends StatelessWidget {
         backgroundColor: const Color(0xffFFFFFF),
         leading: Icon(Icons.menu,size: 35,),
         title: SizedBox(
-             width: 150, child: Image.asset("images/pcmart.jpg")),
+            height: 40,
+            width: 150, child: Image.asset("images/appbar_recipe_logo.png")),
         centerTitle: true,
         actions: [
           Padding(
@@ -58,7 +59,7 @@ class Home extends StatelessWidget {
                       decoration: BoxDecoration(
                           image: DecorationImage(
                               image:
-                                  AssetImage('images/COMPUTER MONITORS.png'),
+                                  AssetImage('images/bangladeshi RECIPE.png'),
                               fit: BoxFit.cover),
                           borderRadius: BorderRadius.circular(15)),
                     ),
@@ -70,7 +71,7 @@ class Home extends StatelessWidget {
                       decoration: BoxDecoration(
                           image: DecorationImage(
                               image:
-                                  AssetImage('images/PC ACCESSORIES (1).png'),
+                                  AssetImage('images/french RECIPE.png'),
                               fit: BoxFit.cover),
                           borderRadius: BorderRadius.circular(15)),
                     ),
@@ -81,7 +82,29 @@ class Home extends StatelessWidget {
                       margin: EdgeInsets.all(8),
                       decoration: BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage('images/PC PARTS.png'),
+                              image: AssetImage('images/INDIAN RECIPE (1).png'),
+                              fit: BoxFit.cover),
+                          borderRadius: BorderRadius.circular(15)),
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {Get.to(()=>SliderProductScreen());},
+                    child: Container(
+                      margin: EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage('images/japanese RECIPE.png'),
+                              fit: BoxFit.cover),
+                          borderRadius: BorderRadius.circular(15)),
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {Get.to(()=>SliderProductScreen());},
+                    child: Container(
+                      margin: EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage('images/RUSSIAN RECIPE.png'),
                               fit: BoxFit.cover),
                           borderRadius: BorderRadius.circular(15)),
                     ),
@@ -93,7 +116,7 @@ class Home extends StatelessWidget {
                     autoPlay: true,
                     autoPlayInterval: Duration(seconds: 3),
                     enlargeCenterPage: true)),
-            Text("ALL PRODUCT",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Color(0xffa1447d))),
+            Text("ALL RECIPE",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Color(0xffa1447d))),
             const SizedBox(height: 10),
             Obx(() => controller.isLoading.isTrue
                 ? const Center(child: CircularProgressIndicator())
@@ -132,14 +155,11 @@ class Home extends StatelessWidget {
                                             CrossAxisAlignment.center,
                                         children: [
                                           SizedBox(
-                                              height: 100,
-                                              width: 100,
+                                              height: 130,
+                                              width: 130,
                                               child: Image(
                                                   image: AssetImage(
                                                       "${controller.recipeList[index].image}"))),
-                                          CommonText(
-                                              title:
-                                                  "ID : ${controller.recipeList[index].id}"),
                                           CommonText(
                                               title:
                                                   "Name : ${controller.recipeList[index].title}"),

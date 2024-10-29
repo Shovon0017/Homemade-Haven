@@ -20,7 +20,8 @@ class SliderProductScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xffFFFFFF),
         title: SizedBox(
-            height: 40, width: 150, child: Image.asset("")),
+            height: 40,
+            width: 150, child: Image.asset("images/appbar_recipe_logo.png")),
         centerTitle: true,
         actions: [
           Padding(
@@ -84,14 +85,11 @@ class SliderProductScreen extends StatelessWidget {
                               CrossAxisAlignment.center,
                               children: [
                                 SizedBox(
-                                    height: 100,
-                                    width: 100,
+                                    height: 130,
+                                    width: 130,
                                     child: Image(
                                         image: AssetImage(
                                             "${controller.recipeList[index].image}"))),
-                                CommonText(
-                                    title:
-                                    "ID : ${controller.recipeList[index].id}"),
                                 CommonText(
                                     title:
                                     "Name : ${controller.recipeList[index].title}"),

@@ -58,7 +58,7 @@ class NavigationBarShow extends StatelessWidget {
               Icons.favorite_outlined,
               color: Color(0xffa1447d),
             ),
-            itemLabel: 'Favorite',
+            itemLabel: 'Loved',
           ),
           BottomBarItem(
             inActiveItem: Icon(

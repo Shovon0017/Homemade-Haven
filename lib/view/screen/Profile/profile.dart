@@ -21,7 +21,7 @@ class _ProfileState extends State<Profile> {
       appBar: AppBar(
         backgroundColor: const Color(0xffFFFFFF),
         title: SizedBox(
-            height: 32, width: 114, child: Image.asset("images/pcmart.jpg")),
+            height: 32, width: 114, child: Image.asset("images/appbar_recipe_logo.png")),
         centerTitle: true,
         actions: [
           Padding(
@@ -46,7 +46,7 @@ class _ProfileState extends State<Profile> {
                 width: double.infinity,
                 child: Card(
                   elevation: 5,
-                  color: const Color(0xff9a0000),
+                  color: const Color(0xffa1447d),
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
