@@ -29,7 +29,7 @@ class RecipeList {
         "id": 2,
         "title": "Chicken Stir-Fry",
         "country": "China",
-        "image": "https://example.com/images/chicken-stir-fry.jpg",
+        "image": "images/chicken grild.png",
         "ingredients": [
           "300g chicken breast, sliced",
           "1 bell pepper, sliced",
@@ -55,7 +55,7 @@ class RecipeList {
         "id": 3,
         "title": "Vegetable Curry",
         "country": "India",
-        "image": "https://example.com/images/vegetable-curry.jpg",
+        "image": "images/manchurian.png",
         "ingredients": [
           "1 onion, chopped",
           "2 cloves garlic, minced",
@@ -80,7 +80,7 @@ class RecipeList {
         "id": 4,
         "title": "Beef Tacos",
         "country": "Mexico",
-        "image": "https://example.com/images/beef-tacos.jpg",
+        "image": "images/egg and roti.png",
         "ingredients": [
           "500g ground beef",
           "1 onion, chopped",
@@ -102,7 +102,7 @@ class RecipeList {
         "id": 5,
         "title": "Caprese Salad",
         "country": "Italy",
-        "image": "https://example.com/images/caprese-salad.jpg",
+        "image": "images/saLAD.png",
         "ingredients": [
           "2 large tomatoes, sliced",
           "200g fresh mozzarella, sliced",
@@ -124,7 +124,7 @@ class RecipeList {
         "id": 6,
         "title": "Pancakes",
         "country": "United States",
-        "image": "https://example.com/images/pancakes.jpg",
+        "image": "images/becan omlet.png",
         "ingredients": [
           "1 cup flour",
           "2 tablespoons sugar",
@@ -148,7 +148,7 @@ class RecipeList {
         "id": 7,
         "title": "Greek Yogurt Parfait",
         "country": "Greece",
-        "image": "https://example.com/images/greek-yogurt-parfait.jpg",
+        "image": "images/pasta.png",
         "ingredients": [
           "2 cups Greek yogurt",
           "1 cup granola",
@@ -167,7 +167,7 @@ class RecipeList {
         "id": 8,
         "title": "Lemon Garlic Shrimp",
         "country": "Mediterranean",
-        "image": "https://example.com/images/lemon-garlic-shrimp.jpg",
+        "image": "images/fried rice with egg.png",
         "ingredients": [
           "400g shrimp, peeled and deveined",
           "3 cloves garlic, minced",
