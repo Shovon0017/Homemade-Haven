@@ -5,7 +5,7 @@ class RecipeList {
         "id": 1,
         "title": "Spaghetti Carbonara",
         "country": "Italy",
-        "image": "https://example.com/images/spaghetti-carbonara.jpg",
+        "image": "images/ramen noodles.png",
         "ingredients": [
           "200g spaghetti",
           "100g pancetta",
