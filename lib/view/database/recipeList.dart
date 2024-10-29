@@ -190,7 +190,7 @@ class RecipeList {
         "id": 9,
         "title": "Chocolate Chip Cookies",
         "country": "United States",
-        "image": "https://example.com/images/chocolate-chip-cookies.jpg",
+        "image": "images/margrita pizza.png",
         "ingredients": [
           "1 cup butter, softened",
           "3/4 cup sugar",
@@ -218,7 +218,7 @@ class RecipeList {
         "id": 10,
         "title": "Vegetable Quesadilla",
         "country": "Mexico",
-        "image": "https://example.com/images/vegetable-quesadilla.jpg",
+        "image": "images/biriyani.png",
         "ingredients": [
           "4 flour tortillas",
           "1 cup shredded cheese",
