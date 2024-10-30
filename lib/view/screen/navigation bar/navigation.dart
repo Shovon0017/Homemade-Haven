@@ -50,15 +50,15 @@ class NavigationBarShow extends StatelessWidget {
           ),
           BottomBarItem(
             inActiveItem: Icon(
-              Icons.favorite_outlined,
+              Icons.thumb_up_alt_rounded,
               color: Colors.white,
 
             ),
             activeItem: Icon(
-              Icons.favorite_outlined,
+              Icons.thumb_up_alt_rounded,
               color: Color(0xffa1447d),
             ),
-            itemLabel: 'Loved',
+            itemLabel: 'Liked',
           ),
           BottomBarItem(
             inActiveItem: Icon(

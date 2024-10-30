@@ -21,7 +21,8 @@ class _ProfileState extends State<Profile> {
       appBar: AppBar(
         backgroundColor: const Color(0xffFFFFFF),
         title: SizedBox(
-            height: 32, width: 114, child: Image.asset("images/appbar_recipe_logo.png")),
+            height: 40,
+            width: 150, child: Image.asset("images/appbar_recipe_logo.png")),
         centerTitle: true,
         actions: [
           Padding(

@@ -47,7 +47,7 @@ class SliderProductScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10),
-            Text("ALL RECIPE",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Color(0xff9a0000))),
+            Text("ALL RECIPE",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Color(0xffa1447d))),
             const SizedBox(height: 10),
             Obx(() => controller.isLoading.isTrue
                 ? const Center(child: CircularProgressIndicator())
@@ -95,7 +95,7 @@ class SliderProductScreen extends StatelessWidget {
                                     "Name : ${controller.recipeList[index].title}"),
                                 CommonText(
                                     title:
-                                    "Country : ${controller.recipeList[index].country}Tk"),
+                                    "Country : ${controller.recipeList[index].country}"),
                               ],
                             ),
                           ),
