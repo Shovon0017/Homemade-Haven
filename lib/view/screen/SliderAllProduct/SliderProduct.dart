@@ -8,6 +8,7 @@ import 'package:homemade_haven/view/common_widget/common_text.dart';
 import 'package:homemade_haven/view/common_widget/search_field.dart';
 import 'package:homemade_haven/view/controller/getX%20controller/recipeListController.dart';
 import 'package:homemade_haven/view/screen/notification/notification.dart';
+import 'package:homemade_haven/view/screen/recipe_details/recipe_details.dart';
 
 class SliderProductScreen extends StatelessWidget {
   const SliderProductScreen({super.key});
@@ -71,6 +72,7 @@ class SliderProductScreen extends StatelessWidget {
                     itemBuilder: (context, index) {
                       return InkWell(
                         onTap: () {
+                          Get.to(()=>RecipeDetails(id: index, recipesData: controller.recipeList[index],));
                         },
                         child: Card(
                           elevation: 4,
