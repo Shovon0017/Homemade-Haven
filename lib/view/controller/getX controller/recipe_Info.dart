@@ -8,22 +8,24 @@ import 'package:homemade_haven/view/model/recipeListModel.dart';
 class RecipeDetailsController extends GetxController {
   RxInt selectedImgIndex = 0.obs;
   var detailsData = {}.obs;
-  RxInt productQty = 1.obs;
   RxList<String> imageList = <String>[].obs;
   String id = "0";
   RxBool isLoading = false.obs;
-  RxDouble productAmount = 0.00.obs;
   RxList<Recipes> liked = <Recipes>[].obs;
   final GetStorage storage = GetStorage();
   @override
   void onInit() {
-    ProductInfoFun();
     _loadCart();
     super.onInit();
   }
   ProductInfoFun() async {
-     await RecipeDetailsService.recipeDetailsService(id: id);
-
+    id = await Get.arguments ?? "0";
+    var a = await RecipeDetailsService.recipeDetailsService(id: id);
+    if (a?.recipes != null) {
+      var data = {
+      };
+      detailsData.addAll(data);
+    }
   }
   void addToCart(Recipes recipes) {
     liked.add(recipes);
