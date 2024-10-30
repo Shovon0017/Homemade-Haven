@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:homemade_haven/view/common_widget/CommonIcon.dart';
 import 'package:homemade_haven/view/common_widget/common_button.dart';
-import 'package:homemade_haven/view/controller/getX%20controller/recipeListController.dart';
 import 'package:homemade_haven/view/controller/getX%20controller/recipe_Info.dart';
 import 'package:homemade_haven/view/model/recipeListModel.dart';
 import 'package:homemade_haven/view/screen/notification/notification.dart';
@@ -25,9 +24,8 @@ class RecipeDetails extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xffFFFFFF),
         title: SizedBox(
-            height: 32,
-            width: 114,
-            child: Image.asset("images/pcmart.jpg")),
+            height: 40,
+            width: 150, child: Image.asset("images/appbar_recipe_logo.png")),
         centerTitle: true,
         actions: [
           Padding(
@@ -76,13 +74,13 @@ class RecipeDetails extends StatelessWidget {
                     child: Text("",style: TextStyle(fontSize: 16),),
                   ),
                 ),
-                Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                Row(mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     CommonButton(
                       buttonWidth:150,
                         buttonName: "Like", onTap: ()async{
-                      controller.addToCart(Products(nameEn: productData.nameEn,regPrice: productData.regPrice,image: productData.image,quantity: productData.quantity));
+                      controller.addToCart(Recipes(title: recipesData.title,image: recipesData.image,country: recipesData.country));
                     })
                   ],
                 )

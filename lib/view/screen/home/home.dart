@@ -8,6 +8,7 @@ import 'package:homemade_haven/view/common_widget/search_field.dart';
 import 'package:homemade_haven/view/controller/getX%20controller/recipeListController.dart';
 import 'package:homemade_haven/view/screen/SliderAllProduct/SliderProduct.dart';
 import 'package:homemade_haven/view/screen/notification/notification.dart';
+import 'package:homemade_haven/view/screen/recipe_details/recipe_details.dart';
 class Home extends StatelessWidget {
   const Home({super.key});
 
@@ -140,7 +141,7 @@ class Home extends StatelessWidget {
                               itemBuilder: (context, index) {
                                 return InkWell(
                                   onTap: () {
-
+                                    Get.to(()=>RecipeDetails(id: 0, recipesData: controller.recipeList[index],));
                                   },
                                   child: Card(
                                     elevation: 4,
@@ -166,6 +167,9 @@ class Home extends StatelessWidget {
                                           CommonText(
                                               title:
                                                   "Country : ${controller.recipeList[index].country}"),
+                                          CommonText(
+                                              title:
+                                              "CookTime : ${controller.recipeList[index].cookTime}"),
                                         ],
                                       ),
                                     ),
