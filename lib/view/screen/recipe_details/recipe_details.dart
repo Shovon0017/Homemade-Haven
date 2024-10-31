@@ -82,7 +82,7 @@ class RecipeDetails extends StatelessWidget {
                     decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),border:const Border.fromBorderSide(BorderSide(color: Colors.black))),
                     child: const Padding(
                       padding: EdgeInsets.all(8.0),
-                      child: Text("${recipesData.}",style: TextStyle(fontSize: 16),),
+                      child: Text("${recipesData.instructions}",style: TextStyle(fontSize: 16),),
                     ),
                   ),
                   Row(mainAxisAlignment: MainAxisAlignment.center,
