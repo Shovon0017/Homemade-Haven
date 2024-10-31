@@ -65,13 +65,13 @@ class RecipeDetails extends StatelessWidget {
                   Text("CookTime:${recipesData.cookTime}"),
                   const SizedBox(height: 10),
                   Text("PrepTime:${recipesData.prepTime}"),
-                  Text("${recipesData.ingredients}"),
+
                    SizedBox(height: 10),
                   Container(
                     height: 200,
                     width: double.infinity,
                     decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),border:const Border.fromBorderSide(BorderSide(color: Colors.black))),
-                    child: const Padding(
+                    child:  Padding(
                       padding: EdgeInsets.all(8.0),
                       child: Text("${recipesData.ingredients}",style: TextStyle(fontSize: 16),),
                     ),
@@ -80,7 +80,7 @@ class RecipeDetails extends StatelessWidget {
                     height: 200,
                     width: double.infinity,
                     decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),border:const Border.fromBorderSide(BorderSide(color: Colors.black))),
-                    child: const Padding(
+                    child:  Padding(
                       padding: EdgeInsets.all(8.0),
                       child: Text("${recipesData.instructions}",style: TextStyle(fontSize: 16),),
                     ),
