@@ -39,61 +39,64 @@ class RecipeDetails extends StatelessWidget {
       body:
           Padding(
             padding: const EdgeInsets.symmetric(horizontal:10),
-            child: Column(
-              children: [
-                Container(
-                  height: 230,
-                  width: 300,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10)
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Container(
+                    height: 230,
+                    width: 300,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10)
+                    ),
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          height: 230,
+                          child: Image.asset("${recipesData.image}")
+                        )
+                      ],
+                    ),
                   ),
-                  child: Column(
+                  const SizedBox(height: 10),
+                 Text("Recipe Name:${recipesData.title}"),
+                  const SizedBox(height: 10),
+                  Text("Country:${recipesData.country}"),
+                  const SizedBox(height: 10),
+                  Text("CookTime:${recipesData.cookTime}"),
+                  const SizedBox(height: 10),
+                  Text("PrepTime:${recipesData.prepTime}"),
+                  Text("${recipesData.ingredients}"),
+                   SizedBox(height: 10),
+                  Container(
+                    height: 200,
+                    width: double.infinity,
+                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),border:const Border.fromBorderSide(BorderSide(color: Colors.black))),
+                    child: const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Text("${recipesData.ingredients}",style: TextStyle(fontSize: 16),),
+                    ),
+                  ),
+                  Container(
+                    height: 200,
+                    width: double.infinity,
+                    decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),border:const Border.fromBorderSide(BorderSide(color: Colors.black))),
+                    child: const Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Text("${recipesData.}",style: TextStyle(fontSize: 16),),
+                    ),
+                  ),
+                  Row(mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      SizedBox(
-                        height: 230,
-                        child: Image.asset("${recipesData.image}")
-                      )
+                      CommonButton(
+                        buttonWidth:150,
+                          buttonName: "Like", onTap: ()async{
+                        controller.addToCart(Recipes(title: recipesData.title,image: recipesData.image,country: recipesData.country));
+                      })
                     ],
-                  ),
-                ),
-                const SizedBox(height: 10),
-               Text("Recipe Name:${recipesData.title}"),
-                const SizedBox(height: 10),
-                Text("Country:${recipesData.country}"),
-                const SizedBox(height: 10),
-                Text("CookTime:${recipesData.cookTime}"),
-                const SizedBox(height: 10),
-                Text("PrepTime:${recipesData.prepTime}"),
-                const SizedBox(height: 10),
-                Container(
-                  height: 200,
-                  width: double.infinity,
-                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),border:const Border.fromBorderSide(BorderSide(color: Colors.black))),
-                  child: const Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Text("",style: TextStyle(fontSize: 16),),
-                  ),
-                ),
-                Container(
-                  height: 200,
-                  width: double.infinity,
-                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),border:const Border.fromBorderSide(BorderSide(color: Colors.black))),
-                  child: const Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Text("",style: TextStyle(fontSize: 16),),
-                  ),
-                ),
-                Row(mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    CommonButton(
-                      buttonWidth:150,
-                        buttonName: "Like", onTap: ()async{
-                      controller.addToCart(Recipes(title: recipesData.title,image: recipesData.image,country: recipesData.country));
-                    })
-                  ],
-                )
-              ],
+                  )
+                ],
+              ),
             ),
           ),
     );
