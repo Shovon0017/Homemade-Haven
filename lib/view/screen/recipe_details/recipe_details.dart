@@ -74,6 +74,15 @@ class RecipeDetails extends StatelessWidget {
                     child: Text("",style: TextStyle(fontSize: 16),),
                   ),
                 ),
+                Container(
+                  height: 200,
+                  width: double.infinity,
+                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),border:const Border.fromBorderSide(BorderSide(color: Colors.black))),
+                  child: const Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Text("",style: TextStyle(fontSize: 16),),
+                  ),
+                ),
                 Row(mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
