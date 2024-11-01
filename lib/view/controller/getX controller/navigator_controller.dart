@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:homemade_haven/view/screen/Profile/profile.dart';
 import 'package:homemade_haven/view/screen/home/home.dart';
+import 'package:homemade_haven/view/screen/liked/liked.dart';
 class BottomNavBarController extends GetxController {
   final pageController = PageController(initialPage: 0);
   final NotchBottomBarController nController =
@@ -13,7 +14,7 @@ class BottomNavBarController extends GetxController {
 
   List<Widget> bottomBarPages = [
     const Home(),
-    // const Cart(),
+    const Liked(),
     const Profile()
   ];
   @override
