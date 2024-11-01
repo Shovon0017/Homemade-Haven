@@ -68,7 +68,7 @@ class RecipeDetails extends StatelessWidget {
 
                    SizedBox(height: 10),
                   Container(
-                    height: 200,
+                    height: 170,
                     width: double.infinity,
                     decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),border:const Border.fromBorderSide(BorderSide(color: Colors.black))),
                     child:  Padding(
