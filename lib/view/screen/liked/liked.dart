@@ -73,7 +73,9 @@ class Liked extends StatelessWidget {
                         shrinkWrap: true,
                         itemCount: cartController.liked.length,
                         itemBuilder: (_, index) {
-                          return InkWell(
+                          return InkWell(onTap: (){
+
+                          },
                             child: Card(
                               margin: const EdgeInsets.symmetric(vertical: 5),
                               surfaceTintColor: Colors.transparent,
