@@ -6,6 +6,7 @@ import 'package:homemade_haven/view/common_widget/custom_order_shimmer_loading.d
 import 'package:homemade_haven/view/controller/getX%20controller/recipe_Info.dart';
 import 'package:homemade_haven/view/screen/liked/widget/no_cart_data_found.dart';
 import 'package:homemade_haven/view/screen/notification/notification.dart';
+import 'package:homemade_haven/view/screen/recipe_details/recipe_details.dart';
 class Liked extends StatelessWidget {
   const Liked({super.key});
 
@@ -74,7 +75,7 @@ class Liked extends StatelessWidget {
                         itemCount: cartController.liked.length,
                         itemBuilder: (_, index) {
                           return InkWell(onTap: (){
-                            Get.to(()=>);
+                            Get.to(()=>RecipeDetails(id: index, recipesData: cartController.liked[index]));
                           },
                             child: Card(
                               margin: const EdgeInsets.symmetric(vertical: 5),
