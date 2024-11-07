@@ -74,54 +74,52 @@ class Liked extends StatelessWidget {
                         shrinkWrap: true,
                         itemCount: cartController.liked.length,
                         itemBuilder: (_, index) {
-                          return InkWell(
-                            child: Card(
-                              margin: const EdgeInsets.symmetric(vertical: 5),
-                              surfaceTintColor: Colors.transparent,
-                              shape: OutlineInputBorder(
-                                borderSide: BorderSide(color: Colors.grey.withOpacity(.3), strokeAlign: BorderSide.strokeAlignOutside),
-                              ),
-                              child: Row(
-                                children: [
-                                  SizedBox(
-                                      height: 80,
-                                      width:80,child: Image.asset("${cartController.liked[index].image}")),
-                            
-                                  Expanded(
-                                    flex: 5,
-                                    child: Padding(
-                                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
-                                      child: Column(
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          Text(
-                                            "Recipe Name:${cartController.liked[index].title}",style: TextStyle(fontSize: 15,overflow: TextOverflow.ellipsis),),
-                                          Text(
-                                            "Country:${cartController.liked[index].country} ",style: TextStyle(
-                                            fontSize: 12,
-                                          ),
-                            
-                                          ),
-                                          Row(
-                                            children: [
-                                              const Spacer(),
-                                              InkWell(
-                                                onTap: () async {
-                                                  cartController.liked.removeAt(index);
-                                                },
-                                                child: const Icon(Icons.delete_forever, color: Colors.red),
-                                              ),
-                                              const SizedBox(width: 10)
-                                            ],
-                                          ),
-                                        ],
-                                      ),
+                          return Card(
+                            margin: const EdgeInsets.symmetric(vertical: 5),
+                            surfaceTintColor: Colors.transparent,
+                            shape: OutlineInputBorder(
+                              borderSide: BorderSide(color: Colors.grey.withOpacity(.3), strokeAlign: BorderSide.strokeAlignOutside),
+                            ),
+                            child: Row(
+                              children: [
+                                SizedBox(
+                                    height: 80,
+                                    width:80,child: Image.asset("${cartController.liked[index].image}")),
+
+                                Expanded(
+                                  flex: 5,
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text(
+                                          "Recipe Name:${cartController.liked[index].title}",style: TextStyle(fontSize: 15,overflow: TextOverflow.ellipsis),),
+                                        Text(
+                                          "Country:${cartController.liked[index].country} ",style: TextStyle(
+                                          fontSize: 12,
+                                        ),
+
+                                        ),
+                                        Row(
+                                          children: [
+                                            const Spacer(),
+                                            InkWell(
+                                              onTap: () async {
+                                                cartController.liked.removeAt(index);
+                                              },
+                                              child: const Icon(Icons.delete_forever, color: Colors.red),
+                                            ),
+                                            const SizedBox(width: 10)
+                                          ],
+                                        ),
+                                      ],
                                     ),
                                   ),
-                            
-                                ],
-                              ),
+                                ),
+
+                              ],
                             ),
                           );
                         }),
