@@ -1,7 +1,6 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:pc_shop_version02/view/screen/FAQ/search_FAQ.dart';
 class FAQ extends StatelessWidget {
   const FAQ({super.key});
 
