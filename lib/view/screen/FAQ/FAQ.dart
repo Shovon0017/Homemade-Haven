@@ -40,7 +40,7 @@ class FAQ extends StatelessWidget {
                           child: Row(
                             children: [
                               Icon(Icons.keyboard_arrow_right_outlined),
-                              Text("How to Book ")
+                              Text("How to upload a Recipe ")
                             ],
                           ),
                         ),
