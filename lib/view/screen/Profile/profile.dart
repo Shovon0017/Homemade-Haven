@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:homemade_haven/view/common_widget/CommonIcon.dart';
 import 'package:homemade_haven/view/common_widget/common_button.dart';
 import 'package:homemade_haven/view/controller/getX%20controller/logout.dart';
+import 'package:homemade_haven/view/screen/FAQ/FAQ.dart';
 import 'package:homemade_haven/view/screen/notification/notification.dart';
 
 class Profile extends StatefulWidget {
@@ -129,7 +130,7 @@ class _ProfileState extends State<Profile> {
               CommonButton(
                   buttonName: "FAQ",
                   onTap: () {
-                    Get.to(()=>)
+                    Get.to(()=>FAQ());
                   }),
               CommonButton(
                   buttonName: "LogOut",
