@@ -5,6 +5,7 @@ import 'package:homemade_haven/view/common_widget/common_button.dart';
 import 'package:homemade_haven/view/controller/getX%20controller/logout.dart';
 import 'package:homemade_haven/view/screen/FAQ/FAQ.dart';
 import 'package:homemade_haven/view/screen/notification/notification.dart';
+import 'package:homemade_haven/view/screen/setting/setting.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});
@@ -120,7 +121,7 @@ class _ProfileState extends State<Profile> {
               CommonButton(
                   buttonName: "Setting",
                   onTap: () {
-                    Get.to({})
+                    Get.to(()=>Setting());
                   }),
               CommonButton(
                   buttonName: "Support",
