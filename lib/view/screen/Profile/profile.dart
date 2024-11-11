@@ -120,7 +120,7 @@ class _ProfileState extends State<Profile> {
               CommonButton(
                   buttonName: "Setting",
                   onTap: () {
-
+                    Get.to({})
                   }),
               CommonButton(
                   buttonName: "Support",
