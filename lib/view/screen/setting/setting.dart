@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:homemade_haven/view/common_widget/CommonIcon.dart';
 
 class Setting extends StatelessWidget {
   const Setting({super.key});
@@ -9,10 +10,10 @@ class Setting extends StatelessWidget {
     return Scaffold(backgroundColor: const Color(0xffFFFFFF),
       appBar: AppBar(
         backgroundColor: const Color(0xffFFFFFF),
+        leading: Icon(Icons.menu,size: 35,),
         title: SizedBox(
-            height: 32,
-            width: 114,
-            child: Image.asset("images/pcmart.jpg")),
+            height: 40,
+            width: 150, child: Image.asset("images/appbar_recipe_logo.png")),
         centerTitle: true,
       ),
       body: const Padding(
