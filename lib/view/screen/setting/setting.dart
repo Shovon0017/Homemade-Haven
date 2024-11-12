@@ -33,7 +33,8 @@ class Setting extends StatelessWidget {
                   children: [
                     Padding(
                       padding: EdgeInsets.only(left:20),
-                      child: widget(child: Text("Language")),
+                      child: InkWell(
+                          child: Text("Language")),
                     ),
                   ],
                 ),
