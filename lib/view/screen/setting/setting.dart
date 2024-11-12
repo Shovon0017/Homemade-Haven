@@ -33,8 +33,7 @@ class Setting extends StatelessWidget {
                   children: [
                     Padding(
                       padding: EdgeInsets.only(left:20),
-                      child: InkWell(onTap: ,
-                          child: Text("Language")),
+                      child: Text("Language"),
                     ),
                   ],
                 ),
