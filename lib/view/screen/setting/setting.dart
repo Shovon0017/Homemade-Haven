@@ -25,21 +25,17 @@ class Setting extends StatelessWidget {
             SizedBox(
               height: 60,
               width: double.infinity,
-              child:InkWell(onTap:(){
-
-              },
-                child: Card(
-                  elevation: 5,
-                  color: Color(0xffFFFFFF),
-                  child: Column(crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.only(left:20),
-                        child: Text("Language"),
-                      ),
-                    ],
-                  ),
+              child: Card(
+                elevation: 5,
+                color: Color(0xffFFFFFF),
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(left:20),
+                      child: Text("Language"),
+                    ),
+                  ],
                 ),
               ),
             ),
