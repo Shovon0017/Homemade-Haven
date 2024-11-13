@@ -25,7 +25,7 @@ class Setting extends StatelessWidget {
             SizedBox(
               height: 60,
               width: double.infinity,
-              child:InkWell(
+              child:InkWell(onTap: ,
                 child: Card(
                   elevation: 5,
                   color: Color(0xffFFFFFF),
