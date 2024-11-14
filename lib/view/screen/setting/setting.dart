@@ -22,7 +22,9 @@ class Setting extends StatelessWidget {
           children: [
             Text("Setting",
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
-            InkWell(onTap: ,
+            InkWell(onTap: (){
+
+            },
               child: SizedBox(
                 height: 60,
                 width: double.infinity,
