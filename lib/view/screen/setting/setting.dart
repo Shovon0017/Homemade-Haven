@@ -22,24 +22,20 @@ class Setting extends StatelessWidget {
           children: [
             Text("Setting",
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
-            InkWell(onTap: (){
-
-            },
-              child: SizedBox(
-                height: 60,
-                width: double.infinity,
-                child: Card(
-                  elevation: 5,
-                  color: Color(0xffFFFFFF),
-                  child: Column(crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.only(left:20),
-                        child: Text("Language"),
-                      ),
-                    ],
-                  ),
+            SizedBox(
+              height: 60,
+              width: double.infinity,
+              child: Card(
+                elevation: 5,
+                color: Color(0xffFFFFFF),
+                child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(left:20),
+                      child: Text("Language"),
+                    ),
+                  ],
                 ),
               ),
             ),
