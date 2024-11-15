@@ -23,7 +23,7 @@ class SearchFieldFAQ extends StatelessWidget {
               borderSide:  const BorderSide(color: Colors.black),
               borderRadius: BorderRadius.circular(8)),
           labelText: "Search FAQ",
-          suffixIcon: const Card(color:Colors.blue,child: Icon(Icons.search,color: Colors.white,))
+          suffixIcon: const Card(color:Colors.bluechild: Icon(Icons.search,color: Colors.white,))
       ),
     );
   }
