@@ -54,7 +54,7 @@ class SliderProductScreen extends StatelessWidget {
                 ? const Center(child: CircularProgressIndicator())
                 : controller.recipeList.isEmpty
                 ? const Center(
-                child: CommonText(title: "Empty Recipe Li"))
+                child: CommonText(title: "Empty Recipe L"))
                 : Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
