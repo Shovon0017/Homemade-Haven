@@ -48,7 +48,7 @@ class SliderProductScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10),
-            Text("ALL RECIPE",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Co(0xffa1447d))),
+            Text("ALL RECIPE",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: )),
             const SizedBox(height: 10),
             Obx(() => controller.isLoading.isTrue
                 ? const Center(child: CircularProgressIndicator())
