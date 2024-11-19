@@ -10,7 +10,7 @@ class Setting extends StatelessWidget {
     return Scaffold(backgroundColor: const Color(0xffFFFFFF),
       appBar: AppBar(
         backgroundColor: const Color(0xffFFFFFF),
-        leading: Icon(Icons.menu,size: 35,),
+        leading: Icon(Icons.menu,),
         title: SizedBox(
             height: 40,
             width: 150, child: Image.asset("images/appbar_recipe_logo.png")),
