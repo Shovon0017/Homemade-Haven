@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:homemade_haven/view/common_widget/CommonIcon.dart';
 
 class Setting extends StatelessWidget {
   const Setting({super.key});
