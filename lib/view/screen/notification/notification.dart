@@ -32,7 +32,7 @@ class NotificationShow extends StatelessWidget {
                     color: Colors.white,
                     child: Center(child: Padding(
                       padding: EdgeInsets.all(8.0),
-                      child: Text(" lasania turkeidish is uploaded to our new recipes.",style: TextStyle(fontSize:15,fontWeight: FontWeight.bold),),
+                      child: Text(" lasania turkdish is uploaded to our new recipes.",style: TextStyle(fontSize:15,fontWeight: FontWeight.bold),),
                     )),
                   ),
                 );
