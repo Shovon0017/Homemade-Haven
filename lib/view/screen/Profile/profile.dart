@@ -115,13 +115,13 @@ class _ProfileState extends State<Profile> {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
               CommonButton(
                   buttonName: "Setting",
                   onTap: () {
-                    Get.to(()=>Setting());
+                    Get.to(()=>const Setting());
                   }),
               CommonButton(
                   buttonName: "Support",
@@ -131,7 +131,7 @@ class _ProfileState extends State<Profile> {
               CommonButton(
                   buttonName: "FAQ",
                   onTap: () {
-                    Get.to(()=>FAQ());
+                    Get.to(()=>const FAQ());
                   }),
               CommonButton(
                   buttonName: "LogOut",
