@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:homemade_haven/view/screen/auth/sign_in.dart';
-import 'package:homemade_haven/view/screen/home/home.dart';
-import 'package:homemade_haven/view/screen/language%20selection/language_selection.dart';
-import 'package:homemade_haven/view/screen/navigation%20bar/navigation.dart';
-import 'package:homemade_haven/view/screen/recipe_details/recipe_details.dart';
 import 'package:homemade_haven/view/screen/splash/splash.dart';
 void main() {
   runApp(MyApp());
