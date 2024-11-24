@@ -18,7 +18,7 @@ class StartPage extends StatelessWidget {
           child: Column(mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset("images/recipe startpage.jpg"),
-              SizedBox(
+              const SizedBox(
                 height: 50,
               ),
               CommonButton(
