@@ -19,7 +19,7 @@ class Home extends StatelessWidget {
       backgroundColor: const Color(0xffFFFFFF),
       appBar: AppBar(
         backgroundColor: const Color(0xffFFFFFF),
-        leading: Icon(Icons.menu,size: 35,),
+        leading: const Icon(Icons.menu,size: 35,),
         title: SizedBox(
             height: 40,
             width: 150, child: Image.asset("images/appbar_recipe_logo.png")),
@@ -36,7 +36,7 @@ class Home extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Padding(
@@ -47,18 +47,18 @@ class Home extends StatelessWidget {
                 },
               ),
             ),
-            SizedBox(height: 10),
-            Text("CATEGORY",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Color(0xffa1447d))),
+            const SizedBox(height: 10),
+            const Text("CATEGORY",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Color(0xffa1447d))),
             CarouselSlider(
                 items: [
                   InkWell(
                     onTap: () {
-                      Get.to(()=>SliderProductScreen());
+                      Get.to(()=>const SliderProductScreen());
                     },
                     child: Container(
-                      margin: EdgeInsets.all(8),
+                      margin: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                          image: DecorationImage(
+                          image: const DecorationImage(
                               image:
                                   AssetImage('images/bangladeshi RECIPE.png'),
                               fit: BoxFit.cover),
@@ -66,11 +66,11 @@ class Home extends StatelessWidget {
                     ),
                   ),
                   InkWell(
-                    onTap: () {Get.to(()=>SliderProductScreen());},
+                    onTap: () {Get.to(()=>const SliderProductScreen());},
                     child: Container(
-                      margin: EdgeInsets.all(8),
+                      margin: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                          image: DecorationImage(
+                          image: const DecorationImage(
                               image:
                                   AssetImage('images/french RECIPE.png'),
                               fit: BoxFit.cover),
@@ -78,33 +78,33 @@ class Home extends StatelessWidget {
                     ),
                   ),
                   InkWell(
-                    onTap: () {Get.to(()=>SliderProductScreen());},
+                    onTap: () {Get.to(()=>const SliderProductScreen());},
                     child: Container(
-                      margin: EdgeInsets.all(8),
+                      margin: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                          image: DecorationImage(
+                          image: const DecorationImage(
                               image: AssetImage('images/INDIAN RECIPE (1).png'),
                               fit: BoxFit.cover),
                           borderRadius: BorderRadius.circular(15)),
                     ),
                   ),
                   InkWell(
-                    onTap: () {Get.to(()=>SliderProductScreen());},
+                    onTap: () {Get.to(()=>const SliderProductScreen());},
                     child: Container(
-                      margin: EdgeInsets.all(8),
+                      margin: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                          image: DecorationImage(
+                          image: const DecorationImage(
                               image: AssetImage('images/japanese RECIPE.png'),
                               fit: BoxFit.cover),
                           borderRadius: BorderRadius.circular(15)),
                     ),
                   ),
                   InkWell(
-                    onTap: () {Get.to(()=>SliderProductScreen());},
+                    onTap: () {Get.to(()=>const SliderProductScreen());},
                     child: Container(
-                      margin: EdgeInsets.all(8),
+                      margin: const EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                          image: DecorationImage(
+                          image: const DecorationImage(
                               image: AssetImage('images/RUSSIAN RECIPE.png'),
                               fit: BoxFit.cover),
                           borderRadius: BorderRadius.circular(15)),
@@ -115,9 +115,9 @@ class Home extends StatelessWidget {
                     height: 180,
                     aspectRatio: 16 / 9,
                     autoPlay: true,
-                    autoPlayInterval: Duration(seconds: 3),
+                    autoPlayInterval: const Duration(seconds: 3),
                     enlargeCenterPage: true)),
-            Text("ALL RECIPE",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Color(0xffa1447d))),
+            const Text("ALL RECIPE",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Color(0xffa1447d))),
             const SizedBox(height: 10),
             Obx(() => controller.isLoading.isTrue
                 ? const Center(child: CircularProgressIndicator())
