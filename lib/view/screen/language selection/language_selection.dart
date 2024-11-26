@@ -13,7 +13,7 @@ class LanguageSelection extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-            Text(
+            const Text(
               "Select Language",
               style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
             ),
@@ -25,20 +25,20 @@ class LanguageSelection extends StatelessWidget {
                   width: 190,
                   child: InkWell(
                     onTap: () {
-                      Get.to(() => SignIn());
+                      Get.to(() => const SignIn());
                     },
                     child: Card(
-                      color: Color(0xffcec4c3),
+                      color: const Color(0xffcec4c3),
                       elevation: 5,
                       child: Padding(
                         padding: const EdgeInsets.all(15.0),
                         child: Column(
                           children: [
                             Image.asset("images/us.webp"),
-                            SizedBox(
+                            const SizedBox(
                               height: 10,
                             ),
-                            Text(
+                            const Text(
                               "English",
                               style: TextStyle(fontSize: 25),
                             )
@@ -53,20 +53,20 @@ class LanguageSelection extends StatelessWidget {
                     width: 190,
                     child: InkWell(
                       onTap: () {
-                        Get.to(() => SignIn());
+                        Get.to(() => const SignIn());
                       },
                       child: Card(
-                        color: Color(0xffcec4c3),
+                        color: const Color(0xffcec4c3),
                         elevation: 5,
                         child: Padding(
                           padding: const EdgeInsets.all(15.0),
                           child: Column(
                             children: [
                               Image.asset("images/bangladesh.webp"),
-                              SizedBox(
+                              const SizedBox(
                                 height: 10,
                               ),
-                              Text(
+                              const Text(
                                 "Bengali",
                                 style: TextStyle(fontSize: 25),
                               )
@@ -77,7 +77,7 @@ class LanguageSelection extends StatelessWidget {
                     ))
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
@@ -88,20 +88,20 @@ class LanguageSelection extends StatelessWidget {
                     width: 190,
                     child: InkWell(
                       onTap: () {
-                        Get.to(() => SignIn());
+                        Get.to(() => const SignIn());
                       },
                       child: Card(
-                        color: Color(0xffcec4c3),
+                        color: const Color(0xffcec4c3),
                         elevation: 5,
                         child: Padding(
                           padding: const EdgeInsets.all(15.0),
                           child: Column(
                             children: [
                               Image.asset("images/india.png"),
-                              SizedBox(
+                              const SizedBox(
                                 height: 10,
                               ),
-                              Text(
+                              const Text(
                                 "Hindi",
                                 style: TextStyle(fontSize: 25),
                               )
@@ -115,20 +115,20 @@ class LanguageSelection extends StatelessWidget {
                     width: 190,
                     child: InkWell(
                       onTap: () {
-                        Get.to(() => SignIn());
+                        Get.to(() => const SignIn());
                       },
                       child: Card(
-                        color: Color(0xffcec4c3),
+                        color: const Color(0xffcec4c3),
                         elevation: 5,
                         child: Padding(
                           padding: const EdgeInsets.all(15.0),
                           child: Column(
                             children: [
                               Image.asset("images/russia.png"),
-                              SizedBox(
+                              const SizedBox(
                                 height: 10,
                               ),
-                              Text(
+                              const Text(
                                 "Russian",
                                 style: TextStyle(fontSize: 25),
                               )
@@ -139,7 +139,7 @@ class LanguageSelection extends StatelessWidget {
                     ))
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
@@ -150,20 +150,20 @@ class LanguageSelection extends StatelessWidget {
                     width: 190,
                     child: InkWell(
                       onTap: () {
-                        Get.to(() => SignIn());
+                        Get.to(() => const SignIn());
                       },
                       child: Card(
-                        color: Color(0xffcec4c3),
+                        color: const Color(0xffcec4c3),
                         elevation: 5,
                         child: Padding(
                           padding: const EdgeInsets.all(15.0),
                           child: Column(
                             children: [
                               Image.asset("images/japan.png"),
-                              SizedBox(
+                              const SizedBox(
                                 height: 10,
                               ),
-                              Text(
+                              const Text(
                                 "Japanese",
                                 style: TextStyle(fontSize: 25),
                               )
@@ -177,20 +177,20 @@ class LanguageSelection extends StatelessWidget {
                   width: 190,
                   child: InkWell(
                       onTap: () {
-                        Get.to(() => SignIn());
+                        Get.to(() => const SignIn());
                       },
                       child: Card(
-                        color: Color(0xffcec4c3),
+                        color: const Color(0xffcec4c3),
                         elevation: 5,
                         child: Padding(
                           padding: const EdgeInsets.all(15.0),
                           child: Column(
                             children: [
                               Image.asset("images/china.png"),
-                              SizedBox(
+                              const SizedBox(
                                 height: 10,
                               ),
-                              Text(
+                              const Text(
                                 "Chinese",
                                 style: TextStyle(fontSize: 25),
                               )
@@ -201,7 +201,7 @@ class LanguageSelection extends StatelessWidget {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
@@ -212,20 +212,20 @@ class LanguageSelection extends StatelessWidget {
                     width: 190,
                     child: InkWell(
                       onTap: () {
-                        Get.to(() => SignIn());
+                        Get.to(() => const SignIn());
                       },
                       child: Card(
-                        color: Color(0xffcec4c3),
+                        color: const Color(0xffcec4c3),
                         elevation: 5,
                         child: Padding(
                           padding: const EdgeInsets.all(15.0),
                           child: Column(
                             children: [
                               Image.asset("images/korea.webp"),
-                              SizedBox(
+                              const SizedBox(
                                 height: 10,
                               ),
-                              Text(
+                              const Text(
                                 "Korean",
                                 style: TextStyle(fontSize: 25),
                               )
@@ -239,20 +239,20 @@ class LanguageSelection extends StatelessWidget {
                     width: 190,
                     child: InkWell(
                       onTap: () {
-                        Get.to(() => SignIn());
+                        Get.to(() => const SignIn());
                       },
                       child: Card(
-                        color: Color(0xffcec4c3),
+                        color: const Color(0xffcec4c3),
                         elevation: 5,
                         child: Padding(
                           padding: const EdgeInsets.all(15.0),
                           child: Column(
                             children: [
                               Image.asset("images/Flag-France.webp"),
-                              SizedBox(
+                              const SizedBox(
                                 height: 10,
                               ),
-                              Text(
+                              const Text(
                                 "French",
                                 style: TextStyle(fontSize: 25),
                               )
