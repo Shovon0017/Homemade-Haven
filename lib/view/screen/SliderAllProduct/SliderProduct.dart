@@ -34,7 +34,7 @@ class SliderProductScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Padding(
@@ -45,8 +45,8 @@ class SliderProductScreen extends StatelessWidget {
                 },
               ),
             ),
-            SizedBox(height: 10),
-            Text("ALL RECIPE",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30 )),
+            const SizedBox(height: 10),
+            const Text("ALL RECIPE",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30 )),
             const SizedBox(height: 10),
             Obx(() => controller.isLoading.isTrue
                 ? const Center(child: CircularProgressIndicator())
