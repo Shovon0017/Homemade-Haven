@@ -95,7 +95,7 @@ class Liked extends StatelessWidget {
                                         Text(
                                           "Recipe Name:${cartController.liked[index].title}",style: const TextStyle(fontSize: 15,overflow: TextOverflow.ellipsis),),
                                         Text(
-                                          "Country:${cartController.liked[index].country} ",style: TextStyle(
+                                          "Country:${cartController.liked[index].country} ",style: const TextStyle(
                                           fontSize: 12,
                                         ),
 
