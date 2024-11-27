@@ -93,7 +93,7 @@ class Liked extends StatelessWidget {
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                       children: [
                                         Text(
-                                          "Recipe Name:${cartController.liked[index].title}",style: TextStyle(fontSize: 15,overflow: TextOverflow.ellipsis),),
+                                          "Recipe Name:${cartController.liked[index].title}",style: const TextStyle(fontSize: 15,overflow: TextOverflow.ellipsis),),
                                         Text(
                                           "Country:${cartController.liked[index].country} ",style: TextStyle(
                                           fontSize: 12,
